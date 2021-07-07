@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Explore Batam</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Ini Bagian Link,CSS, Dll-->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    
+    <style type="text/css">
+      .jumbotron {
+      position: relative;
+      padding-top: 10rem;
+      padding-bottom: calc(10rem - 4.5rem);
+      background: linear-gradient(to bottom, rgba(162, 162, 148, 0.63) 0%, rgba(162, 162, 148, 0.63) 100%), url(assets/img/barelang.png);
+      background-position: center;
+      background-attachment: scroll;
+      background-size: cover;
+      background-repeat: no-repeat;
+      }
+      body {
+        background: #1C4C72 !important;
+      }
+    </style>
+    <!-- Ini Bagian Link Script-->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+    <a class="navbar-brand font-weight-bold" href="#">Explore Batam</a>
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto"> <!--mb-2 mb-lg-0-->
+        <li class="nav-item active"><a class="nav-link active" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+        <li class="nav-item"><a class="btn btn-warning rounded-pill" href="login.html">Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+  </body>
+    <div class="container">
+      <div class="jumbotron text-center">
+        <h1>Explore Places on Batam</h1>
+        <p>Explore Batam in all It’s glory.<br>
+          The beaches, scuba diving on it’s island and enjoy it’s night life.<br>
+          Batam is  the best place for you to enjoy.</p>
+      </div>
+      <form>
+        <input class="form-control form-control-lg rounded-pill" type="search" placeholder="Explore!">
+      </form>
+    </div>
+    <div class="container">
+      <h4 class="text-center font-weight-bold m-4 text-white">Recommended Places</h4>
+      <div class="row mx-auto">
+        <!--Card (Daftar Produk)-->
+        <div class="card mr-2 ml-2 mb-2" style="width: 22rem;">
+          <img class="card-img-top" src="assets/img/pulau-petong.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Pulau Petong</h5>
+            <p class="card-text">Ini Adalah Pulau Petong.</p>
+            <!-- <i class=""></i> -->
+            <a href="#" class="btn btn-warning" data-target="#produk1" data-toggle="modal" >Details</a>
+          </div>
+        </div>
+        <div class="card mr-2 ml-2 mb-2" style="width: 22rem;">
+          <img class="card-img-top" src="assets/img/pulau-abang.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Pulau Abang</h5>
+            <p class="card-text">Ini Adalah Pulau Abang.</p>
+            <!-- <i class=""></i> -->
+            <a href="#" class="btn btn-warning" data-target="#produk2" data-toggle="modal">Details</a>
+          </div>
+        </div>
+        <div class="card mr-2 ml-2 mb-2" style="width: 22rem;">
+          <img class="card-img-top" src="assets/img/pulau-ranoh.jpeg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Pulau Ranoh</h5>
+            <p class="card-text">Ini Adalah Pulau Ranoh.</p>
+            <!-- <i class=""></i> -->
+            <a href="#" class="btn btn-warning">Details</a>
+          </div>
+        </div>
+      </div>
+      <!-- Modal Detail Produk -->
+      <div class="modal fade" id="produk1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLongTitle">Details</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="row">
+                <div class="col-md-6">
+                  <img src="assets/img/pulau-petong.jpg" class="img-responsive" width="100%" />
+                </div>
+                <div class="col-md-6">
+                  <table class="table table-borderless">
+                    <tr>
+                      <th>Destination Name</th>
+                      <td>Pulau Petong</td>
+                    </tr>
+                    <tr>
+                      <th>Estimated Fee</th>
+                      <td>Rp500.000</td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-dismiss="modal">Back</button>
+              <button type="button" class="btn btn-primary">Check-In</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="produk2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLongTitle">Details</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="row">
+                <div class="col-md-6">
+                  <img src="assets/img/pulau-abang.jpg" class="img-responsive" width="100%" />
+                </div>
+                <div class="col-md-6">
+                  <table class="table table-borderless">
+                    <tr>
+                      <th>Destination Name</th>
+                      <td>Pulau Abang</td>
+                    </tr>
+                    <tr>
+                      <th>Estimated Fee</th>
+                      <td>Rp600.000</td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-dismiss="modal">Back</button>
+              <button type="button" class="btn btn-primary">Check-In</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="bg-dark text-white p-5">
+      <div class="row">
+        <div class="col-md-3">
+        <h5>About Us</h5>
+          <ul>
+            <li>Ikhwan Ash Shafa Arrafi - 4312011026</li>
+            <li>Muhammad Farhan - 4312011027</li>
+          </ul>
+        </div>
+        <div class="col-md-3"></div>
+        <div class="col-md-3"></div>
+      </div>
+    </footer>
+</html>
